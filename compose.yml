@@ -1,0 +1,5 @@
+services:
+  yt-dlp:
+    build:
+      context: .
+      dockerfile: src/Dockerfile

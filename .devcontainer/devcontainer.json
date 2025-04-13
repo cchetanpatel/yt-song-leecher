@@ -1,0 +1,10 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "dockerComposeFile": "../docker-compose.yml",
+  "containerEnv": {
+    "TERM": "xterm-256color"
+  },
+  "postCreateCommand": "bash .devcontainer/install-dependencies.sh"
+}
