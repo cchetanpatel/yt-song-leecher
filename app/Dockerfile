@@ -1,6 +1,12 @@
 FROM jauderho/yt-dlp:latest
 
-RUN apk update;
-RUN apk add npm;
+WORKDIR /app
 
-CMD ["/bin/bash"];
+RUN apk update
+RUN apk add npm
+
+COPY ./* /app/
+RUN npm install
+
+ENTRYPOINT []
+CMD ["node", "index.js"]

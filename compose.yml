@@ -1,5 +1,7 @@
 services:
-  yt-dlp:
+  app:
     build:
       context: .
-      dockerfile: src/Dockerfile
+      dockerfile: app/Dockerfile
+    ports:
+      - 3000:3000

@@ -6,5 +6,6 @@
   "containerEnv": {
     "TERM": "xterm-256color"
   },
-  "postCreateCommand": "bash .devcontainer/install-dependencies.sh"
+  "postCreateCommand": "bash .devcontainer/install-dependencies.sh",
+  "forwardPorts": [3000, 3000]
 }
